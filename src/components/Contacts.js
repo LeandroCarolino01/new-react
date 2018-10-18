@@ -8,17 +8,17 @@ class Contacts extends Component {
                 {
                     id: 1,
                     name: 'Leandro',
-                    age: 30
+                    email: 'leandro@gmail.com'
                 },
                 {
                     id: 2,
                     name: 'Many',
-                    age: 34
+                    email: 'many@gmail.com'
                 },
                 {
                     id: 3,
                     name: 'Pee',
-                    age: 31
+                    email: 'pee@gmail.com'
                 }
             ]
         }
@@ -28,7 +28,7 @@ class Contacts extends Component {
     return (
       <div>
         {contacts.map(contact => (
-            <h1>{contact.age}</h1>
+            <h1>{contact.email}</h1>
         ))}
       </div>
     )

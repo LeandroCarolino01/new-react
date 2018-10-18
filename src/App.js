@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Contacts from './components/Contacts';
+import Contact from './components/Contact';
 import './App.css';
 
 class App extends Component {
@@ -8,8 +8,8 @@ class App extends Component {
     return (
       <div className="App">
       <div className="container">
-        <h1>Test</h1>
-        <Contacts />
+        <h1>My App</h1>
+        <Contact name="Leandro" email="leandro@gmail.com"/>
       </div>
       </div>
     );
