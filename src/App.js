@@ -4,11 +4,14 @@ import Contacts from './components/Contacts';
 import './App.css';
 
 class App extends Component {
+  state = {
+    title: 'My App'
+  }
   render() {
     return (
       <div className="App">
       <div className="container">
-        <h1>My App</h1>
+        <h1>{this.state.title}</h1>
         <Contacts />
       </div>
       </div>
