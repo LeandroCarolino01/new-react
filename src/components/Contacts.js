@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
+import Contact from './Contact'
 
 class Contacts extends Component {
-    constructor() {
-        super();
-        this.state = {
+    state = {
             contacts: [
                 {
                     id: 1,
@@ -22,13 +21,17 @@ class Contacts extends Component {
                 }
             ]
         }
-    }
+    
   render() {
       const { contacts } = this.state;
     return (
-      <div>
+      <div className="container">
         {contacts.map(contact => (
-            <h1>{contact.email}</h1>
+            <Contact 
+            key={contact.id}
+            contact={contact}
+            
+            />
         ))}
       </div>
     )

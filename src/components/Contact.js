@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
  class Contact extends Component {
   render() {
-      const { name, email } = this.props;
+      const { name, email } = this.props.contact;
       //destructuring
     return (
       <div>
@@ -15,8 +15,8 @@ import PropTypes from 'prop-types';
 }
 
 Contact.propTypes = {
-    name: PropTypes.string.isRequired,
-    email: PropTypes.string.isRequired
+    contact: PropTypes.object.isRequired
+   
 }
 
 export default Contact;
